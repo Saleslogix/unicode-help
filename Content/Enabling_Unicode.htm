@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" class="topic" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" /><title>Enabling_Unicode</title>
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/Borders.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" />
+        <script src="SkinSupport/jquery.min.js">
+        </script>
+        <script src="SkinSupport/MadCapAll.js">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">Enabling Unicode<a name="kanchor3"></a></h1>
+        <p>Do not enable field-selectable Unicode until you have reviewed the risks and limitations associated with this feature. Do not enable Unicode 
+ if your database contains multi-byte data. Converting existing multi-byte 
+ data fields to Unicode may result in a loss or corruption of data.</p>
+        <div class="MCDropDown_0">
+            <div class="MCDropDownHead_0"><a class="MCDropDownHotSpot_0" href="javascript:void(0);" id="MCDropDownHotSpot_22813721_0" onclick="FMCDropDown( this ); return false;">Tell me more...<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCDropDownIcon" /></a>
+            </div>
+            <div class="MCDropDownBody" id="MCDropDownBody_22813721_0" style="display: none;">
+                <p>When field-selectable Unicode is enabled:</p>
+                <ul>
+                    <li class="Bullets" value="1">Unicode field types (Unicode 
+ String and Unicode Memo) become available in the Database Manager and 
+ Application Architect Entity Designer. Unicode String displays Unicode text on the clients.</li>
+                    <li class="Bullets" value="2">GroupTranslator sets conditions 
+ to UTF-16.</li>
+                </ul>
+                <ul>
+                    <li class="Bullets" value="1"><span class="MyVariablesProduct Name">Saleslogix</span> uses a new code page for ANSI String and UTF16.</li>
+                    <li class="Bullets" value="2">The System Summary Report 
+ is updated to indicate Unicode is enabled.</li>
+                    <li class="Bullets" value="3">Database storage requirements may increase. Ensure your main office and Remote user computers have sufficient hardware to store and process Unicode data.</li>
+                </ul>
+            </div>
+        </div>
+        <table wrapperparagraphselector="P" style="width: 80%;margin-top: 14pt;border-spacing: 0px;border-spacing: 0px;" cellspacing="0" width="80%">
+            <col style="width: 45px;" />
+            <col style="width: 581px;" />
+            <tr>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p style="text-align: center;margin-bottom: 0;" align="center">
+                        <img src="image/note.gif" />
+                    </p>
+                </td>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p>Field-selectable Unicode is limited to specific feature areas. Extending the database for Unicode requires a strong knowledge of <span class="MyVariablesProduct Name">Saleslogix</span> and its database schema.<MadCap:conditionalText MadCap:conditions="Primary.Online"> Before implementing this feature, you should carefully review <a href="Understanding_Unicode.htm">Understanding Unicode</a>  for details. Persons implementing this feature assume full responsibility and understand the risks and limitations associated with Unicode in <span class="MyVariablesProduct Name">Saleslogix</span>. <span class="MyVariablesCompanyNameShort">Saleslogix</span> strongly recommends you back up your database before making any Unicode changes.</MadCap:conditionalText></p>
+                </td>
+            </tr>
+        </table>
+        <table wrapperparagraphselector="P" style="margin-top: 14pt;border-spacing: 0px;margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <col />
+            <col />
+            <tr>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p style="text-align: center;margin-bottom: 0;" align="center">
+                        <img src="image/caution.gif" />
+                    </p>
+                </td>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p class="Tip-Note-Text" style="margin-bottom: 0;">If you convert an existing field to Unicode 
+ or create a new Unicode field and write data to your database, you cannot 
+ revert your installation to ANSI data types. You can enable/disable Unicode 
+ and create/remove new Unicode fields <span style="font-style: italic;">only</span> 
+ until you convert data or write Unicode data to your database. Once Unicode 
+ data has been written to the database, you will corrupt your data if you 
+ disable the changes.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Infinitive">To enable</p>
+        <ol MadCap:continue="true">
+            <li class="Topic-Text-Numbered" value="1">Use Administrator to do the following:</li>
+        </ol>
+        <blockquote>
+            <ol style="list-style-type: lower-alpha;">
+                <li value="1">On 
+ the <span style="font-weight: bold;">Tools</span> menu, click <span style="font-weight: bold;">Options</span>.</li>
+                <li value="2">Click 
+ the <span style="font-weight: bold;">Database</span> tab.</li>
+                <li value="3">Select 
+ the <span style="font-weight: bold;">Allow Unicode field types</span> 
+ check box.</li>
+                <li value="4">Read 
+ the warning message, and then click <span style="font-weight: bold;">Yes</span>.</li>
+                <li value="5">Click <b>OK</b>.</li>
+            </ol>
+        </blockquote>
+        <ol MadCap:continue="true">
+            <li value="2">(Microsoft SQL Server Only) Disable auto-translate on your database server.<ol style="list-style-type: lower-alpha;"><li value="1">Open the Connection Manager.</li><li value="2">In the <b>SalesLogix Connection Manager</b> dialog box, select your database connection and click <b>Edit</b>.</li><li value="3">Click the <b>All</b> tab.</li><li value="4">Select the <b>Auto Translate</b> property and click <b>Edit Value</b>.</li><li value="5">In the <b>Property Value</b> box, select <b>False</b>.</li><li value="6">Click <b>OK</b>.</li><li value="7">Save your settings and exit the Connection Manager.</li><li value="8">Restart the server.</li></ol></li>
+            <li value="3">(Oracle Only) If you are creating a new database instance, use AL32UTF8 as the Normal character set.</li>
+            <li value="4">(Windows 2003/XP only) Configure supplemental language support on Web Host and Web Client machines if they must support East Asian or other multi-byte character sets:<ol style="list-style-type: lower-alpha;"><li value="1">In the Control Panel, open <b>Regional and Language Options</b>.</li><li value="2">On the <b>Regional Options</b> and <b>Advanced</b> tabs, verify the correct language is selected in the drop-down list.</li><li value="3">If your required language is not available in the list, click the <span class="SLXBold">Languages</span> tab and select the boxes for Supplemental language support. <span>For example, if Chinese, Japanese, or Korean languages will be used or stored in the database, check </span><span class="SLXBold">Install files for East Asian languages</span><span>.</span> A file copy and restart may be required. When finished, select the appropriate language on the Regional Options and Advanced tabs and restart.</li></ol></li>
+            <li value="5"> If you anticipate that your database will continue to contain some multi-byte data, then verify that the  <span style="font-weight: bold;">Language for non-Unicode programs</span> 
+ value is defined on the Web Host and Web Client machines. This setting is used to determine the code page that is used to convert between multi-byte string data and Unicode data.<br /></li>
+            <ol style="list-style-type: lower-alpha;">
+                <li value="1">In the Control Panel, open <b>Regional and Language Options</b>.</li>
+                <li value="2">On the  <b>Advanced</b> tab (Windows XP/2003) or the <span class="SLXBold">Administrative</span> tab (Windows 2008/7), select the appropriate language.</li>
+            </ol>
+            <li class="Topic-Text-Numbered" value="6">(Microsoft Office 2007 only) Enable UTF-8 support for Internet Protocols in Microsoft Outlook. UTF-8 support must be enabled when users are exporting extended characters to e-mail.<ol MadCap:continue="true" style="list-style-type: lower-alpha;"><li value="1">Open Microsoft Outlook.</li><li value="2">On the <b>Tools</b> menu, click <b>Options</b>.</li><li value="3">Click the <b>Mail Format</b> tab.</li><li value="4">Click <b>International Options</b>.</li><li value="5">Under <b>Internet Protocols</b>, select <b>Enable UTF-8 support for mailto: protocol</b>.</li><li value="6">Click <b>OK</b>.</li></ol></li>
+        </ol>
+        <p class="RelatedTopics" MadCap:conditions="Primary.Online">How Do I?</p>
+        <p MadCap:conditions="Primary.Online"><a href="Adding_Unicode_Fields.htm">Add Unicode Fields to a Table</a>
+        </p>
+        <p MadCap:conditions="Primary.Online"><a href="Converting_a_Field_to_Unicode.htm">Convert an Existing Field 
+ to Unicode</a>
+        </p>
+        <p MadCap:conditions="Primary.Online"><a href="Unsupported_Tables.htm">Unsupported Tables</a>
+        </p>
+        <p>&#160;</p>
+        <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Borders.css');width: 100%;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle_Borders" cellspacing="0">
+            <col style="width: 100%;" />
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td style="font-size: 8pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle_Borders_Body_0_0_RowEnd_ColEnd">
+                        <p style="font-family: Verdana;font-size: 8pt;"><a href="General/feedback.htm">Tell us how we can make the Help better</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

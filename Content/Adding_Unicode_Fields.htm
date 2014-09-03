@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" /><title>Adding_Unicode_Fields</title>
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/Borders.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" />
+        <script src="SkinSupport/jquery.min.js">
+        </script>
+        <script src="SkinSupport/MadCapAll.js">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation"><a name="kanchor6"></a>Adding Unicode Fields to Tables</h1>
+        <p>You can create a custom table that includes Unicode fields, or add Unicode 
+ fields to an existing table.</p>
+        <table wrapperparagraphselector="P" style="width: 80%;margin-top: 14pt;border-spacing: 0px;" cellspacing="0" width="80%">
+            <col style="width: 56px;" />
+            <col style="width: 513px;" />
+            <tr>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p style="text-align: center;margin-bottom: 0;" align="center">
+                        <img src="image/caution.gif" />
+                    </p>
+                </td>
+                <td style="padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top">
+                    <p class="Tip-Note-Text" style="margin-bottom: 0;">Back up your database before making any Unicode 
+ changes.</p>
+                </td>
+            </tr>
+        </table>
+        <p style="page-break-inside: avoid;">
+            <MadCap:conditionalText MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t2">To add a custom table that includes Unicode fields<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+            </MadCap:conditionalText>
+        </p>
+        <div MadCap:targetName="t2" style="display: none;">
+            <ol>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="1">Open the Database Manager.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="2">Add 
+ a <a href="Resources/CHMSupport/DBManager.chm::/Database Management/Creating_a_Table.htm" MadCap:conditions="Primary.Online">table</a> and <MadCap:conditionalText MadCap:conditions="Primary.Online"><a href="Resources/CHMSupport/DBManager.chm::/Database Management/adding_a_field_to_a_table.htm">fields</a></MadCap:conditionalText> 
+ to your database.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="3">Open 
+ the Application Architect.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="4">Use 
+ the <span style="font-weight: bold;">New Entity Wizard</span> to create 
+ a new entity that points to your table.</li>
+            </ol>
+            <p class="Topic-Text-Indent" style="page-break-inside: avoid;">Ensure you select the Create a business entity from 
+ an existing table option in the wizard. See the “Using the New Entity Wizard” topic in the Application Architect 
+ Help for details. </p>
+        </div>
+        <p><a MadCap:conditions="Primary.Online" href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t1">To add a Unicode field to an existing table<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t1" style="display: none;">
+            <ol>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="1">Open the Database Manager.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="2">Add 
+ a <MadCap:conditionalText MadCap:conditions="Primary.Online"><a href="Resources/CHMSupport/DBManager.chm::/Database Management/adding_a_field_to_a_table.htm">field(s)</a></MadCap:conditionalText> 
+ to the table.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="3">In Application Architect  <span style="font-weight: bold;">Project Explorer</span> &gt; <span style="font-weight: bold;">Entity 
+ Model</span> &gt; <span style="font-weight: bold;">Packages</span>, right-click 
+ the existing entity to which you want to add the field.</li>
+                <li class="Topic-Text-Numbered" style="page-break-inside: avoid;" value="4">Click 
+ <span style="font-weight: bold;">Update Properties</span>, select the 
+ field name(s), and then click <span style="font-weight: bold;">Finish</span>.</li>
+            </ol>
+        </div>
+        <p class="RelatedTopics" MadCap:conditions="Primary.Online">Related Topics</p>
+        <p MadCap:conditions="Primary.Online"><a href="Understanding_Unicode.htm">Understanding Unicode</a>
+        </p>
+        <p MadCap:conditions="Primary.Online"><a href="Enabling_Unicode.htm">Enabling Unicode</a>
+        </p>
+        <p MadCap:conditions="Primary.Online"><a href="Converting_a_Field_to_Unicode.htm">Converting a Field to Unicode</a>
+        </p>
+        <p>&#160;</p>
+        <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Borders.css');width: 100%;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle_Borders" cellspacing="0">
+            <col style="width: 100%;" />
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td style="font-size: 8pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle_Borders_Body_0_0_RowEnd_ColEnd">
+                        <p style="font-family: Verdana;font-size: 8pt;"><a href="General/feedback.htm">Tell us how we can make the Help better</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

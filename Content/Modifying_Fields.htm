@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="non-print" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" /><title>Modifying_Fields</title>
+        <link href="SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="Resources/TableStyles/Borders.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SALESLOGIX.CSS" rel="stylesheet" />
+        <script src="SkinSupport/jquery.min.js">
+        </script>
+        <script src="SkinSupport/MadCapAll.js">
+        </script>
+        <script src="SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <h1 value="Architect Help (09-19-01) for v5.2 © 2001 Interact Commerce Corporation">
+            <MadCap:conditionalText MadCap:conditions="Primary.Online">Modifying Fields</MadCap:conditionalText>
+        </h1>
+        <p><a name="kanchor7"></a>When you convert a field to Unicode<a name="kanchor8"></a>, you must change the same field in all propagating tables. 
+ If you do not change all related entities, data will be corrupted and 
+ display incorrectly. <a MadCap:conditions="Primary.Online" href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="Example">Tell me more...<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a></p>
+        <p MadCap:targetName="Example" style="display: none;">For example, if you change the Account.AccountName 
+ field to Unicode but do not change the Contact.AccountName field, the 
+ AccountName field for the contact will display "???" in the 
+ Web Client. If your data is corrupted during this process, convert the 
+ fields in propagating tables that were not modified correctly. Then use 
+ a script to repopulate your data.</p>
+        <p MadCap:conditions="Primary.Online">The following list includes some of the most common areas you may want 
+ to modify to display Unicode data. Click an item to display its related 
+ entities.</p>
+        <table wrapperparagraphselector="P" style="width: 80%;margin-top: 14pt;border-spacing: 0px;" cellspacing="0" width="80%">
+            <tr MadCap:conditions="Primary.Online">
+                <td style="width: 10%;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" width="10%">
+                    <p style="text-align: center;margin-bottom: 0;" align="center">
+                        <img src="image/note.gif" MadCap:excludeAction="unbind" />
+                    </p>
+                </td>
+                <td style="width: 90%;padding-left: 6px;padding-top: 6px;padding-right: 6px;padding-bottom: 6px;" valign="top" width="90%">
+                    <ul>
+                        <li MadCap:conditions="" value="1">The lists are provided as examples of data relationships in <span class="MyVariablesProduct Name">Saleslogix</span>. 
+ There may be additional relationships you should consider. For 
+ example, when auditing is enabled in Application Architect, property changes 
+ are tracked to the History table. Ensure you understand all relationships 
+ for the fields you want to convert before you modify a field. </li>
+                        <li MadCap:conditions="" value="2">The <span class="MyVariablesProduct Name">Saleslogix</span> Database Help details the <span class="MyVariablesProduct Name">Saleslogix</span> tables, 
+ fields, and relationships. Use this Help system to understand the <span class="MyVariablesProduct Name">Saleslogix</span> schema when implementing field-selectable Unicode.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t10">Account Name<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t10" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ACCOUNT.ACCOUNT </li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">ACCOUNT.ACCOUNT_UC</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">ACCOUNTSUMMARY.ACCOUNT</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">ACTIVITY.ACCOUNTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">CONTACT.ACCOUNT</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="6">HISTORY.ACCOUNTNAME </li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="7">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t9">Account Status<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t9" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">CONTACT.STATUS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">IMPORTHISTORY.STATUS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">LEAD.STATUS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">LEADSOURCE.STATUS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t8">Address<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t8" style="display: none;">
+            <p MadCap:conditions="Primary.Online">Change the following fields:</p>
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ADDRESS1</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">ADDRESS2</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">CITY</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">STATE</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">POSTALCODE</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="6">COUNTRY</li>
+            </ul>
+            <p MadCap:conditions="Primary.Online">In the following tables:</p>
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ADDRESS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">HIST_LEAD_ADDRESS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">LEAD_ADDRESS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">RMAADDRESS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">SALESORDERADDRESS</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="6">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t7">Campaign Name<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t7" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">CAMPAIGN.CAMPAIGNNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t6">Contact Name<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t6" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ACTIVITY.CONTACTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">ATTACHMENT.FILENAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">CONTACT.FIRSTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">CONTACT.LASTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">CONTACT.LASTNAME_UC</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="6">CONTACT.MIDDLENAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="7">CONTACT.PREFIX</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="8">CONTACT.SUFFIX</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="9">HISTORY.CONTACTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="10">HISTORY.LONGNOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="11">HISTORY.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="12">LEAD.FIRSTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="13">LEAD.LASTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="14">LITREQUEST.CONTACTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="15">RMA.SHIPTONAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="16">SALESORDER.BILLTONAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="17">SALESORDER.SHIPTONAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="18">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t5">Lead Company<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t5" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">HIST_LEAD.COMPANY</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t4">Lead Name<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t4" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">LEAD.FIRSTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">LEAD.LASTNAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">ATTACHMENT.FILENAME</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">HISTORY.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">HISTORY.LONGNOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="6">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t3">Opportunity Comments<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t3" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ACTIVITY.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">ACTIVITYTRACKEVTHIST.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">ACTIVITYTRACKINGEVENT.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">HISTORY.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t2">Opportunity Description<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t2" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">OPPORTUNITY.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">ACCOUNT.DESCRIPTION</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p MadCap:conditions="Primary.Online"><a href="javascript:void(0);" onclick="FMCToggler( this ); return false;" class="MCToggler_0" MadCap:targets="t1">Regarding field<img style="border: none;margin-left: 5px;" src="SkinSupport/DropDownClosed.gif" MadCap:altsrc="SkinSupport/DropDownOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( 'SkinSupport/DropDownOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCTogglerIcon" /></a>
+        </p>
+        <div MadCap:targetName="t1" style="display: none;">
+            <ul>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="1">ACCOUNT.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="2">OPPORTUNITY.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="3">OPPORTUNITY_COMPETITOR.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="4">OPPORTUNITY_PRODUCT.NOTES</li>
+                <li class="Bullets" MadCap:conditions="Primary.Online" value="5">Any related fields in a 
+ custom table</li>
+            </ul>
+        </div>
+        <p class="RelatedTopics" MadCap:conditions="Primary.Online">Related Topics</p>
+        <p class="Topic-Text-Numbered" MadCap:conditions="Primary.Online"><a href="Understanding_Unicode.htm">Understanding 
+ Unicode</a>
+        </p>
+        <p class="Topic-Text-Numbered" MadCap:conditions="Primary.Online"><a href="Adding_Unicode_Fields.htm">Adding 
+ a Unicode Field</a>
+        </p>
+        <p class="Topic-Text-Numbered" MadCap:conditions="Primary.Online"><a href="Unsupported_Tables.htm">Unsupported Tables</a>
+        </p>
+        <p class="Topic-Text-Numbered" MadCap:conditions="Primary.Online"><a href="Converting_a_Field_to_Unicode.htm">Converting a Field to Unicode</a>
+        </p>
+        <p>&#160;</p>
+        <table style="caption-side: top;mc-table-style: url('Resources/TableStyles/Borders.css');width: 100%;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle_Borders" cellspacing="0">
+            <col style="width: 100%;" />
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td style="font-size: 8pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle_Borders_Body_0_0_RowEnd_ColEnd">
+                        <p style="font-family: Verdana;font-size: 8pt;"><a href="General/feedback.htm">Tell us how we can make the Help better</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

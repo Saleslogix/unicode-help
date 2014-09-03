@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetIndex Count="17">
+    <IndexEntry>
+        <Entries>
+            <IndexEntry Term="Adding">
+                <Entries>
+                    <IndexEntry Term="Unicode fields to tables">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Adding_Unicode_Fields" Link="/Content/Adding_Unicode_Fields.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Converting">
+                <Entries>
+                    <IndexEntry Term="fields to Unicode">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Converting_a_Field_to_Unicode" Link="/Content/Converting_a_Field_to_Unicode.htm#kanchor5" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Fields">
+                <Entries>
+                    <IndexEntry Term="converting to Unicode">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Converting_a_Field_to_Unicode" Link="/Content/Converting_a_Field_to_Unicode.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Propagating tables">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Modifying_Fields" Link="/Content/Modifying_Fields.htm#kanchor8" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Tables">
+                <Entries>
+                    <IndexEntry Term="associated with Unicode">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Modifying_Fields" Link="/Content/Modifying_Fields.htm#kanchor7" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Unicode">
+                <Entries>
+                    <IndexEntry Term="converting fields">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Converting_a_Field_to_Unicode" Link="/Content/Converting_a_Field_to_Unicode.htm#kanchor4" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="enabling">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Enabling_Unicode" Link="/Content/Enabling_Unicode.htm#kanchor3" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="fields and related entities">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Modifying_Fields" Link="/Content/Modifying_Fields.htm#kanchor7" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="limitations">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Understanding_Unicode" Link="/Content/Understanding_Unicode.htm#kanchor2" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="risks and benefits">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Understanding_Unicode" Link="/Content/Understanding_Unicode.htm#kanchor1" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                    <IndexEntry Term="unsupported tables">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Unsupported_Tables" Link="/Content/Unsupported_Tables.htm#kanchor9" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="Unicode fields">
+                <Entries />
+                <Links>
+                    <IndexLink Title="Adding_Unicode_Fields" Link="/Content/Adding_Unicode_Fields.htm#kanchor6" UsedConditions="" LocalConditions="" />
+                </Links>
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+        </Entries>
+        <Links />
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+    </IndexEntry>
+</CatapultTargetIndex>
